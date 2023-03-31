@@ -1,0 +1,330 @@
+.html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ---------------------------------------------------NATVBAR-------------------------------------------------------- */
+
+.navbar {
+background-color: #ffffff;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-bottom: 1px solid #d9d9d9;
+margin-bottom: 20px;
+}
+
+.navbar ul {
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.navbar li {
+margin: 0 15px;
+}
+
+.navbar a {
+color: #000000;
+font-size: 14px;
+text-transform: uppercase;
+text-decoration: none;
+padding: 10px 20px;
+}
+
+.navbar a:hover {
+border-bottom: 2px solid #000000;
+}
+/* ---------------------------------------------------CONTENEDOS GENERAL-------------------------------------------------------- */
+.container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 20px;;
+    margin-bottom: -80px;
+}
+
+.monito_feliz {
+    background-color: #f0f0f0;
+    display: inline-block;
+    margin-left: 65px;
+    margin-top: 10px;
+    position: absolute;
+}
+/* ---------------------------------------------------CONTENEDOS PRODUCTOS-------------------------------------------------------- */
+.c-product{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 80px;
+    text-align: center;
+    margin-bottom: -80px;
+}
+
+.product {
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: calc(20% - 20px);
+}
+
+.product img {
+    max-width: 75%; 
+}
+
+.product h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product button {
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px;
+    width: 60%;
+    border-radius: 6px;
+}
+
+.product button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #d9d9d9;
+    color: #999999;
+    font-size: 15px;
+    padding: 1px;
+    text-align: center;
+}
+
+/* --------------------------------------------------CONTENEDOR CARDS--------------------------------------------------------- */
+.container-c {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container-c .card {
+    width: 240px;
+    height: 430px;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    transition: all 0.25s;
+    display: flex;
+    align-items: center; 
+}
+
+.container-c .card:hover {
+    transform: translateY(-15);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    
+}
+
+.container-c .card img {
+    width: 100%;
+    height: 55%;
+}
+
+.container-c .card h4 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.container-c .card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 0 1rem;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-c .card a {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.2s;
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+}
+
+.container-c .card a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+/* --------------------------------------------------CARRUSEL--------------------------------------------------------- */
+.carrousel{
+    width: 20%;
+    height: 100%;
+
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 650px;
+}
+
+.itemCarrouselTarjeta p{
+    color: #000000;
+    font-size: 50px;
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+/* -------------------------------------------  MODAL ---------------------------------------------------------------- */
+
+.overlay { 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+#popupBody{
+    width: 46%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    margin: 20% auto;
+    transition: all 5s ease-in-out;
+}
+
+#cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+    transition: all 200ms;
+}
+
+/* -------------------------------------------  CONTENIDO MODAL ---------------------------------------------------------------- */
+
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+    .form-group {
+    margin-bottom: 20px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
