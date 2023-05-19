@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel ="icon" href=img_logo-chiconew.ico>
+	<title>Master Cap Ayuda</title>
+  <link rel="stylesheet" href="css/soporte.css">
+</head>
+<body>
+	
+	<div class="container">
+		<img src=img/img_logo-chico-largo.png 
+				width="300px" 
+				height="40px"/>
+		<div class="navbar">
+			<a href="Inicio.html">Inicio</a>
+			<a href="sale.html">Sale</a>
+			<a href="beneficios.html">Beneficios</a>
+			<a href="soporte.html">Ayuda </a>
+			<a href="contacto.html">Contacto</a>
+		</div>
+	</div>
+    <h1>Cuéntanos tu problema, te ayudamos</h1>
+    <form action="">
+      <!-- NOMBRE -->
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id='nombre' required minlength="3" maxlength="20">
+      </div>
+      <!-- EMAIL -->
+      <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id='email' required minlength="3" maxlength="30">
+      </div>
+      <!-- ASUNTO -->
+      <div class="form-group">
+        <label for="asunto">Asunto:</label>
+        <input type="text" id='asunto' required minlength="3" maxlength="20">
+      </div>
+      <!-- NRO.BOLETA -->
+      <div class="form-group">
+        <label for="nroboleta">Nro de Boleta:</label>
+        <input type="number" id='nroboleta' required>
+      </div>
+      <!-- MENSAJE -->
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <input type="text" id='mensaje' required minlength="10" maxlength="500">
+      </div>
+
+      <input type="submit" onclick='return enviarFormulario();' value='Enviar'>
+    </form>
+</body>
